@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Hack";
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #e5e9f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  scroll-behavior: smooth !important;
+}
+body::-webkit-scrollbar {
+  width: 0.8em; /* width of the entire scrollbar */
+}
+body {
+  color: white;
+}
+body::-webkit-scrollbar-track {
+  background: #0a192f; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #14264a; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.Input {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: calc(5px + 2vmin);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+.violet {
+  color: #c9a0dc;
+}
+
+input {
+  background-color: #282c34;
+  outline: none;
+  margin-left: 5px;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  min-width: 70vw;
+  max-width: auto;
+}
+.msg {
+  padding: 0 40px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.about > img {
+  background-size: contain;
+  width: 20em;
+  height: 20em;
+  border-radius: 25px;
+}
+.suggest {
+  gap: 1em;
+  display: flex;
+}
+
+.suggest ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about > ul > li {
+  list-style-type: disc;
+}
+.skill-tag {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(30, 50, 70);
+  margin: 10px;
+}
