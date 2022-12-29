@@ -32,7 +32,34 @@ body::-webkit-scrollbar-thumb {
   color: white;
   padding: calc(5px + 2vmin);
 }
+pre {
+  color: #e5e9f0;
+  font-family: "Hack";
+  -webkit-font-smoothing: antialiased;
+  animation: typing 0.5s steps(30, end);
+  -moz-osx-font-smoothing: grayscale;
+  animation-duration: 2s;
+  animation-timing-function: steps(30);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  overflow: hidden;
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-bottom: -5em;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
 
+  100% {
+    width: 100%;
+  }
+}
+.info-container,
 ul {
   list-style-type: none;
   display: flex;
@@ -47,6 +74,7 @@ ul {
 input {
   background-color: #282c34;
   outline: none;
+  margin-bottom: 15px;
   margin-left: 5px;
   border: none;
   color: white;
@@ -87,4 +115,8 @@ input {
   border-radius: 10px;
   background-color: rgba(30, 50, 70);
   margin: 10px;
+}
+.main-container {
+  margin-left: 3em;
+  margin-bottom: 1em;
 }

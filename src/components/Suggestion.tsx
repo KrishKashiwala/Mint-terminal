@@ -10,14 +10,18 @@ const Suggestion = () => {
           <li>whoami</li>
           <li>social</li>
           <li>email</li>
+          <li>banner</li>
+          <li>gui</li>
           <li>date</li>
         </ul>
         <ul>
-          <li>Who is Krish Kashiwala?</li>
-          <li>Who are you?</li>
-          <li>Display social networks</li>
-          <li>Don't email me :)</li>
-          <li>As usual your time is going worse.</li>
+          <li>- who is krish kashiwala?</li>
+          <li>- who are you?</li>
+          <li>- Display social networks</li>
+          <li>- Don't email me :)</li>
+          <li>- Display the header</li>
+          <li>- Best Portfolio on earth {">>"} </li>
+          <li>- As usual your time is going worse.</li>
         </ul>
       </div>
     </div>

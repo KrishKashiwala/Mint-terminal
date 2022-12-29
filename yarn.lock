@@ -1575,6 +1575,13 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@ribrary/hintput@^5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@ribrary/hintput/-/hintput-5.0.9.tgz#2d8df457ec1129ead01ab2bb8106b636a149c738"
+  integrity sha512-VGlWo/TM5dsvceHQVi1/MLPfmX4obfHLCA0Oa7Vqxn4ZmvcpH3P9XRr5G9o7maqa9dOLJpKb0HOv1j5V1xzt+A==
+  dependencies:
+    react "^18.2.0"
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -7393,6 +7400,11 @@ react-app-polyfill@^3.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
+
+react-autocomplete-hint@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-autocomplete-hint/-/react-autocomplete-hint-2.0.0.tgz#4a08be86c0050cbaa1c6a5b38bc3e0e688a8eae8"
+  integrity sha512-cwj+h503xosFvd7y/tVHAo2bMj033v9WzVKbsPKc/SfoNsLD75/5nhBoIxbZOCP2KiPhgHHalb77Z/4pu6uwTQ==
 
 react-dev-utils@^12.0.1:
   version "12.0.1"
