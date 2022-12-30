@@ -6,7 +6,13 @@ const TermInfo = () => {
       <li className="violet">&</li>
       <li className="text-primary">krishkashiwala</li>
       <li>@</li>
-      <li className="text-success">kkcodes</li>
+      <li
+        style={{
+          color: "greenyellow",
+        }}
+      >
+        kkcodes
+      </li>
       <li>:~$</li>
     </ul>
   );
