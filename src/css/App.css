@@ -166,12 +166,12 @@ span {
 }
 /* responsive design */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 630px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
     width: 100vw;
-    margin: 0;
-    margin-top: 0;
+    margin: 2em;
+    margin-top: 1em;
   }
   pre {
     margin-left: 0;
@@ -221,12 +221,12 @@ span {
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 430px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
     width: 100vw;
-    margin: 0;
-    margin-top: 0;
+    margin: 2em;
+    margin-top: 1em;
   }
   pre {
     margin-left: 0;
