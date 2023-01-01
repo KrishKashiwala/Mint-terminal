@@ -165,7 +165,14 @@ span {
   display: none;
 }
 /* responsive design */
-@media screen and (max-width: 420px) {
+
+@media screen and (max-width: 430px) {
+  body {
+    font-family: "Hack", "IBM Plex Mono", monospace;
+    width: 100vw;
+    margin: 0;
+    margin-top: 0;
+  }
   pre {
     margin-left: 0;
   }
@@ -185,7 +192,7 @@ span {
     margin-left: -15.5em;
   }
   .hint {
-    margin-left: -13.3em;
+    margin-left: -12.7em;
     margin-top: 2.97em;
   }
   .main-container,
@@ -214,10 +221,12 @@ span {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 630px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
     width: 100vw;
+    margin: 0;
+    margin-top: 0;
   }
   pre {
     margin-left: 0;
@@ -238,7 +247,7 @@ span {
     margin-left: -15.5em;
   }
   .hint {
-    margin-left: -13em;
+    margin-left: -12.7em;
     margin-top: 2.97em;
   }
   .main-container,
