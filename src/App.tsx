@@ -11,6 +11,25 @@ function App() {
       <span>Welcome to interactive web terminal</span>
       <pre>{banner}</pre>
       <span>Type 'help' to see the list of available commands</span>
+      <span
+        style={{
+          marginBottom: "10px",
+        }}
+      >
+        Type 'repo' or click{" "}
+        <a
+          href="https://github.com/KrishKashiwala/Mint-terminal"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{
+            textDecoration: "underline",
+            color: "#ffffff",
+          }}
+        >
+          here
+        </a>{" "}
+        for the Github repository.
+      </span>
       {cmdHistory.map((cmd, index) => (
         <Input cmdHistory={cmdHistory} setCmdHistory={setCmdHistory} />
       ))}

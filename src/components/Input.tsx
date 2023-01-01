@@ -4,10 +4,28 @@ import About from "./About";
 import Email from "./Email";
 import Gui from "./Gui";
 import Links from "./Links";
+import ProjectRepo from "./ProjectRepo";
+import Projects from "./Projects";
 import Repo from "./Repo";
 import Suggestion from "./Suggestion";
 import TermInfo from "./TermInfo";
 
+const handleAdvProjects = (inputCmd: string) => {
+  switch (inputCmd) {
+    case "projects go 1":
+      return <ProjectRepo url="https://krishkashiwala.netlify.app/" />;
+    case "projects go 2":
+      return <ProjectRepo url="https://octoprofiler.vercel.app/" />;
+    case "projects go 3":
+      return (
+        <ProjectRepo url="https://github.com/KrishKashiwala/cli-based-chat-app-using-python" />
+      );
+    case "projects go 4":
+      return (
+        <ProjectRepo url="https://github.com/KrishKashiwala/Farmgistics" />
+      );
+  }
+};
 const Input = ({
   cmdHistory,
   setCmdHistory,
@@ -33,6 +51,7 @@ const Input = ({
     setAutoSuggest(autoSuggestMap[0]);
   };
   const handleCmdChange = (inputCmd: string) => {
+    if (inputCmd.includes("projects go")) return handleAdvProjects(inputCmd);
     switch (inputCmd) {
       case "whois":
         return <About />;
@@ -46,6 +65,8 @@ const Input = ({
         return <pre>{banner}</pre>;
       case "gui":
         return <Gui />;
+      case "projects":
+        return <Projects />;
       case "date":
         return new Date().toUTCString();
       case "" || undefined:
@@ -69,7 +90,6 @@ const Input = ({
     }
   };
 
-  // console.log("autosuggest:", autoSuggest);
   return (
     <div>
       <div className="info-container">
@@ -82,7 +102,7 @@ const Input = ({
           style={{
             color:
               suggest === "" ? "white" : suggest === "lorem" ? "red" : "green",
-            caretColor: "white",
+            caretColor: "#ffffff",
           }}
           disabled={disableInput}
           onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {

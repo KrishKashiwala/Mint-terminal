@@ -14,6 +14,7 @@ const Suggestion = () => {
           <li>whoami</li>
           <li>social</li>
           <li>email</li>
+          <li>projects</li>
           <li>banner</li>
           <li>gui</li>
           <li>help</li>
@@ -26,6 +27,7 @@ const Suggestion = () => {
           <li>- who are you?</li>
           <li>- Display social networks</li>
           <li>- Don't email me :)</li>
+          <li>- Display unique and awesome projects.</li>
           <li>- Display the header</li>
           <li>- Best Portfolio on earth {">>"} </li>
           <li>- View all commands</li>
