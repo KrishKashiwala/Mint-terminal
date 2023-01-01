@@ -5,7 +5,6 @@ import { banner } from "./utils/commands";
 
 function App() {
   const [cmdHistory, setCmdHistory] = useState<string[]>([""]);
-
   return (
     <div className="Input">
       <span>Welcome to interactive web terminal</span>

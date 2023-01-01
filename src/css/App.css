@@ -165,12 +165,7 @@ span {
   display: none;
 }
 /* responsive design */
-
-@media screen and (max-width: 620px) {
-  body {
-    margin: 30px;
-    margin-top: 10px;
-  }
+@media screen and (max-width: 420px) {
   pre {
     margin-left: 0;
   }
@@ -219,11 +214,7 @@ span {
   }
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    margin: 30px;
-    margin-top: 10px;
-  }
+@media screen and (max-width: 620px) {
   pre {
     margin-left: 0;
   }
