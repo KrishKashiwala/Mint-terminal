@@ -25,7 +25,7 @@ const About = () => {
         <br />
         Here are a few technologies I've known thoroughly:
         <br />
-        <ul>
+        <ul className="skill-container">
           <li className="skill-tag"> ⚛ React.js</li>
           <li className="skill-tag"> 📱 GraphQL</li>
           <li className="skill-tag">
@@ -43,7 +43,7 @@ const About = () => {
           </li>
           <br />
         </ul>
-        <ul>
+        <ul className="skill-container">
           <li className="skill-tag">
             <i className="fa-brands fa-golang"></i> Go{" "}
           </li>
@@ -51,7 +51,7 @@ const About = () => {
         <br />
         Some of my soft skills:
         <br />
-        <ul>
+        <ul className="skill-container">
           <li className="skill-tag">Project Leader</li>
         </ul>
       </div>

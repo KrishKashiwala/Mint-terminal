@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ProjectRepo = ({ url }: any) => {
+const ProjectRepo = ({ url, name }: any) => {
   const [rerender, setReRender] = useState<boolean>(true);
   useEffect(() => {
     rerender && window.open(url, "_blank", "noopener,noreferrer");
@@ -8,7 +8,7 @@ const ProjectRepo = ({ url }: any) => {
     // eslint-disable-next-line
   }, []);
 
-  return <></>;
+  return <>Opening {name}...</>;
 };
 
 export default ProjectRepo;

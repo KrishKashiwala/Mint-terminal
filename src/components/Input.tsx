@@ -13,16 +13,32 @@ import TermInfo from "./TermInfo";
 const handleAdvProjects = (inputCmd: string) => {
   switch (inputCmd) {
     case "projects go 1":
-      return <ProjectRepo url="https://krishkashiwala.netlify.app/" />;
+      return (
+        <ProjectRepo
+          name="Personal Portfolio Website"
+          url="https://krishkashiwala.netlify.app/"
+        />
+      );
     case "projects go 2":
-      return <ProjectRepo url="https://octoprofiler.vercel.app/" />;
+      return (
+        <ProjectRepo
+          name="Octoprofiler"
+          url="https://octoprofiler.vercel.app/"
+        />
+      );
     case "projects go 3":
       return (
-        <ProjectRepo url="https://github.com/KrishKashiwala/cli-based-chat-app-using-python" />
+        <ProjectRepo
+          name="Talk to terminal"
+          url="https://github.com/KrishKashiwala/cli-based-chat-app-using-python"
+        />
       );
     case "projects go 4":
       return (
-        <ProjectRepo url="https://github.com/KrishKashiwala/Farmgistics" />
+        <ProjectRepo
+          name="Farmgistics"
+          url="https://github.com/KrishKashiwala/Farmgistics"
+        />
       );
   }
 };
@@ -36,7 +52,6 @@ const Input = ({
   const [disableInput, setDisableInput] = useState<boolean>(false);
   const [autoSuggest, setAutoSuggest] = useState<string>("");
   const histMap: string[] = [];
-  console.log("history: ", cmdHistory.at(cmdHistory.length - 6));
   const tabComplete = (inputCmd: string) => {
     // check if allCommands contains inputCmd
     const arr = allCommands.filter((item) => item === inputCmd);
@@ -108,8 +123,6 @@ const Input = ({
           onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
             if (e.key === "Enter") {
               e.preventDefault();
-              console.log("enter pressed");
-              console.log(cmdHistory);
               setCmdHistory([...cmdHistory, cmd!]);
               setFlag(!flag);
               setDisableInput(true);
@@ -131,7 +144,6 @@ const Input = ({
                 )
                   histMap.push(cmdHistory);
               }
-              console.log("histMap : ", histMap);
               setCmd(histMap.at(histMap.length - 1));
             }
           }}
