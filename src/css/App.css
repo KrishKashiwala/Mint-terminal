@@ -169,7 +169,7 @@ span {
 @media screen and (max-width: 630px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
-    width: 85vw;
+    width: 88vw;
     margin: 2em;
     margin-top: 1em;
   }
@@ -224,7 +224,7 @@ span {
 @media screen and (max-width: 430px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
-    width: 85vw;
+    width: 88vw;
     margin: 2em;
     margin-top: 1em;
   }
