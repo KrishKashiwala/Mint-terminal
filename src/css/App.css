@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
 body {
   margin: 0;
-  font-family: "Hack";
+  font-family: "Hack", "IBM Plex Mono", monospace;
   font-size: 80%;
   font-weight: 400;
   color: #cbd5d6;
@@ -215,6 +215,9 @@ span {
 }
 
 @media screen and (max-width: 620px) {
+  body {
+    font-family: "Hack", "IBM Plex Mono", monospace;
+  }
   pre {
     margin-left: 0;
   }
@@ -226,8 +229,9 @@ span {
   }
   .arrow {
     display: block;
-    margin-left: 3em;
+    margin-left: 4em;
     margin-top: -1em;
+    width: 100vw;
   }
   input {
     margin-top: 2.97em;
