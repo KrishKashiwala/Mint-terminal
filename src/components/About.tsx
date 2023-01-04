@@ -52,7 +52,10 @@ const About = () => {
         Some of my soft skills:
         <br />
         <ul className="skill-container">
-          <li className="skill-tag">Project Leader</li>
+          <li className="skill-tag">Leadership</li>
+          <li className="skill-tag">Teamwork</li>
+          <li className="skill-tag">Commitment</li>
+          <li className="skill-tag">Multitasking</li>
         </ul>
       </div>
     </div>

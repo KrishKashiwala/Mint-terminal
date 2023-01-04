@@ -152,7 +152,7 @@ const Input = ({
             tabComplete(e.target.value);
           }}
         ></input>
-        <span className="hint">{autoSuggest}</span>
+        <div className="hint">{autoSuggest}</div>
       </div>
       <div className="main-container">{flag && handleCmdChange(cmd!)}</div>
     </div>

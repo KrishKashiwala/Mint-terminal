@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Hack", "IBM Plex Mono", monospace;
-  font-size: 80%;
+  font-size: 85%;
   font-weight: 400;
   color: #cbd5d6;
   margin: 3em;
@@ -133,7 +133,8 @@ span {
 }
 
 .hint {
-  margin-left: -170px;
+  margin-left: -12.9em;
+  margin-top: -1.2em;
   color: rgb(211, 211, 211);
   opacity: 0.3;
 }
@@ -165,7 +166,6 @@ span {
   display: none;
 }
 /* responsive design */
-
 @media screen and (max-width: 630px) {
   body {
     font-family: "Hack", "IBM Plex Mono", monospace;
@@ -247,8 +247,8 @@ span {
     margin-left: -15.5em;
   }
   .hint {
-    margin-left: -12.7em;
-    margin-top: 2.97em;
+    margin-left: -12.9em;
+    margin-top: 1.8em;
   }
   .main-container,
   .suggest ul {
