@@ -133,19 +133,19 @@ const Input = ({
               setCmd(autoSuggest);
               setSuggest(autoSuggest);
             }
-            if (e.key === "ArrowUp") {
-              e.preventDefault();
-              //exclude all entries
-              for (let i = 0; i < cmdHistory.length; i++) {
-                if (
-                  cmdHistory.includes(allCommands) ||
-                  cmdHistory !== undefined ||
-                  cmdHistory === ""
-                )
-                  histMap.push(cmdHistory);
-              }
-              setCmd(histMap.at(histMap.length - 1));
-            }
+            // if (e.key === "ArrowUp") {
+            //   e.preventDefault();
+            //   //exclude all entries
+            //   for (let i = 0; i < cmdHistory.length; i++) {
+            //     if (
+            //       cmdHistory.includes(allCommands) ||
+            //       cmdHistory !== undefined ||
+            //       cmdHistory === ""
+            //     )
+            //       histMap.push(cmdHistory);
+            //   }
+            //   setCmd(histMap.at(histMap.length - 1));
+            // }
           }}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setCmd(e.target.value);
